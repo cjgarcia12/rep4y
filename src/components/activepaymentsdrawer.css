@@ -1,0 +1,104 @@
+/* Dialog container styling */
+.active-payments-dialog {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    max-width: 500px; /* Restrict max width for readability */
+    margin: 0 auto; /* Center align within dialog */
+    overflow-y: auto; /* Enable scrolling for long content */
+}
+
+/* Close button styling */
+.close-button {
+    background-color: #ef4444;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Active payments list styling */
+.active-payments-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.payment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Progress bar styling */
+.progress-bar {
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    width: 80%; /* Slightly narrower to fit dialog */
+    height: 10px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #10b981;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .active-payments-dialog {
+        padding: 15px;
+        max-width: 90%; /* Fit dialog width on smaller screens */
+    }
+
+    .close-button {
+        top: 10px;
+        right: 15px;
+        font-size: 0.8rem;
+    }
+
+    .payment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress-bar {
+        width: 100%; /* Full width on smaller screens */
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .active-payments-dialog {
+        padding: 10px;
+    }
+
+    .close-button {
+        top: 5px;
+        right: 10px;
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+
+    .payment-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+}
+

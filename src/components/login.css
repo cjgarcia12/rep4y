@@ -1,0 +1,115 @@
+/* Center the card on the screen */
+.login-container {
+    display: flex;
+    background-image: url("../assets/bg.png");
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style the card */
+.login-card {
+    max-width: 400px;
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px; /* Rounded corners for a cleaner look */
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the logo */
+.logo-img {
+    margin: 0 auto;
+    display: block;
+    width: 60%; /* Dynamically scales with container */
+    max-width: 200px; /* Limit max width */
+}
+
+/* Title text */
+.title-text {
+    font-size: 1.8rem; /* Responsive font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style the form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Input field styles */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+    display: flex;
+    flex-direction: column; /* Adjusted for stacking on smaller screens */
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Login and Create buttons */
+.login-button, .create-button {
+    padding: 12px;
+    background-color: #64AB9D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1) !important;
+    text-align: center; /* Center-align text for better visuals */
+}
+
+.login-button:hover, .create-button:hover {
+    background-color: #919191;
+}
+
+/* Create button width adjustment */
+.create-button {
+    width: 100%;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    .login-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .title-text {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .login-button, .create-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

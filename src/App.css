@@ -1,0 +1,23 @@
+/* index.css or app.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@400;700&display=swap');
+
+
+/* index.css or app.css */
+
+/* Set Poppins as the main font for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Apply Rubik to headings, if desired */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700; /* Use bold for emphasis on headings */
+}
+
+/* Optional: Apply specific styling for other text elements */
+p, span, a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}

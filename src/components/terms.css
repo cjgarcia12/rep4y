@@ -1,0 +1,50 @@
+/* Styling for terms dialog */
+.terms-trigger {
+    color: Black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+.terms-trigger:hover {
+    background-color: darkgrey;
+}
+
+/* Dialog Content Styling */
+.dialog-content {
+    padding: 20px;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dialog-content h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.dialog-content p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Close button styling */
+.close-button-terms {
+    background-color: #64AB9D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+    background-color: #519a8a;
+}
+

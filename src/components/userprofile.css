@@ -1,0 +1,128 @@
+.profile-container {
+    background-image: url("../assets/bg.png"); /* Same background as dashboard */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile-card {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.column-1, .column-2 {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Flex container for buttons */
+.card-foot-up {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add gap between buttons */
+}
+
+/* Buttons */
+.save-button-up, .cancel-button-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #64AB9D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1) !important;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.save-button-up:hover {
+    background-color: #919191;
+}
+
+.cancel-button-up:hover {
+    background-color: #d1d1d1;
+}
+
+/* Responsive styling */
+@media (max-width: 580px) {
+    .columns {
+        flex-direction: column;
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Smaller title font on mobile */
+    }
+
+    .save-button-up, .cancel-button-up {
+        padding: 0.5rem 1rem; /* Adjust button size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    /* Stack buttons vertically on small screens */
+    .card-foot-up {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-field {
+        font-size: 0.9rem; /* Adjust input font size */
+    }
+
+
+    .save-button-up, .cancel-button-up {
+        width: 100%; /* Full-width buttons */
+        margin-top: 10px; /* Add space between buttons */
+        text-align: center !important;
+    }
+
+    .error-text {
+        font-size: 0.9rem; /* Adjust font size for better readability on small screens */
+    }
+}

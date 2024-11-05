@@ -1,0 +1,39 @@
+.payment-plan-dialog {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.paypalbutton {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #64AB9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #919191;
+}
